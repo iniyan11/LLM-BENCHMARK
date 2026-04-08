@@ -50,8 +50,8 @@ pip install ollama pandas psutil streamlit plotly
 
 ### 3. Download models
 ollama pull tinyllama
-ollama pull gemma:2b
-ollama pull qwen:1.8b
+ollama pull qwen2.5:3b
+ollama pull phi3
 ## Usage
 
 ### Run Benchmark
