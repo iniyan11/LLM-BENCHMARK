@@ -22,9 +22,9 @@ The results are visualized using Streamlit.
 
 
 ## Models Used
-- TinyLlama  
-- Gemma (2B)  
-- Qwen (1.8B / 3B)
+- tinyllama
+- qwen2.5:3b
+- phi3
 
 
 ##  Project Structure
