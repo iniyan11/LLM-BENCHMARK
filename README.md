@@ -28,14 +28,12 @@ The results are visualized using Streamlit.
 
 
 ##  Project Structure
-LLM-Benchmark-Dashboard/
-│
 
-├── Benchmark.py
-
-├── dashboard.py
-
-├── results.csv
+    LLM-Benchmark-Dashboard/
+    │
+    ├── Benchmark.py
+    ├── dashboard.py
+    ├── results.csv
 
 ## Installation
 
@@ -64,8 +62,25 @@ streamlit run dashboard.py
 Open in browser:
 http://localhost:8501
 
+## Architecture
 
----
+The architecture of this project shows how different components are connected and how data flows through the system
+
+    User Input (Prompts)
+        ↓
+    Benchmark.py (Python Script)
+        ↓
+      Ollama
+        ↓
+    AI Models (TinyLlama, Gemma, Qwen)
+        ↓
+    Results (Latency, Memory, Quality)
+        ↓
+    results.csv
+        ↓
+    dashboard.py (Streamlit)
+        ↓
+    Visualization (Graphs & Tables)
 
 ## Evaluation Metrics
 
@@ -75,23 +90,6 @@ http://localhost:8501
 | Memory | RAM usage during execution |
 | Quality | Response length (word count) |
 
----
-
-## Challenges
-- Limited system RAM  
-- Large models could not run  
-- Storage issues for model downloads  
-- Memory management during model switching  
-
----
-
-## Future Improvements
-- Add more models  
-- Improve quality scoring (BLEU, ROUGE)  
-- Add GPU monitoring  
-- Create advanced leaderboard  
-
----
 
 ## Conclusion
 This project provides a simple and effective way to compare local AI models based on performance and helps in selecting the best model for different use cases.
